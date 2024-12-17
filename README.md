@@ -14,8 +14,9 @@
 заходим в папку с пауком 
 ### cd C:\Users\Евгений\Documents\GitHub\SpiderMatplotlib\divan_scraper\divan_scraper\spiders
  и выполняем команду
-### scrapy crawl divan_scraper -o output.csv
-Результаты парсинга сохранятся в файле формата CSV и XLSX
+### scrapy crawl divan_scraper -o output.csv (где divan_scraper название папки с проектом)
+Результаты парсинга сохранятся в файле формата CSV (output.csv) и XLSX (divan_data.xlsx)
+
 Для конвертации из формата CSV в Excel используется функция
 
  def closed(self, reason):
