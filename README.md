@@ -1,2 +1,24 @@
-# SpiderMatplotlib
- Парсинг цен диванов с сайта divan.ru с построением гистограммы средних цен
+### Парсинг цен диванов с сайта divan.ru с построением гистограммы средних цен
+ В папке divan_scraper находится паук файл Spyder.py
+
+ Для сохранения результата парсинга в файл Excel  устанавливаем 
+
+### pip install pandas
+
+выполняем команды в терминале 
+
+###  .venv\Scripts\activate
+
+###  pip install openpyxl  
+
+заходим в папку с пауком 
+### cd C:\Users\Евгений\Documents\GitHub\SpiderMatplotlib\divan_scraper\divan_scraper\spiders
+ и выполняем команду
+### scrapy crawl divan_scraper -o output.csv
+Результаты парсинга сохранятся в файле формата CSV и XLSX
+Для конвертации из формата CSV в Excel используется функция
+
+ def closed(self, reason):
+
+        df = pd.DataFrame(self.data)
+        df.to_excel('divan_data.xlsx', index=False)
