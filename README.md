@@ -23,3 +23,5 @@
 
         df = pd.DataFrame(self.data)
         df.to_excel('divan_data.xlsx', index=False)
+
+Сохраняем данные в Excel после завершения работы паука
