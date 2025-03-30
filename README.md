@@ -6,6 +6,7 @@
 Выполняем команды в терминале: 
 
 cd (Указываем полный путь) \SpiderMatplotlib.venv\Scripts\activate
+
 pip install -r requirements.txt
 
 Заходим в папку с пауком 
