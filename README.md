@@ -1,20 +1,20 @@
 ### 1. Парсинг цен диванов с сайта divan.ru с построением гистограммы цен
  В папке divan_scraper находится паук файл Spyder.py
 
- Для сохранения результата парсинга в файл Excel  устанавливаем 
+#### Устанавливаем requirements.txt
 
-### pip install pandas
+Выполняем команды в терминале: 
 
-выполняем команды в терминале 
+cd (Указываем полный путь) \SpiderMatplotlib.venv\Scripts\activate
+pip install -r requirements.txt
 
-###  .venv\Scripts\activate
+Заходим в папку с пауком 
+cd (Указываем полный путь) \SpiderMatplotlib\divan_scraper\divan_scraper\spiders
 
-###  pip install openpyxl  
+Выполняем команду:
 
-заходим в папку с пауком 
-### cd (Указываем полный путь) \SpiderMatplotlib\divan_scraper\divan_scraper\spiders
- и выполняем команду
-### scrapy crawl divan_scraper -o output.csv (где divan_scraper название папки с проектом)
+scrapy crawl divan_scraper -o output.csv (где divan_scraper название папки с проектом)
+
 Результаты парсинга сохранятся в файле формата CSV (output.csv) и XLSX (divan_data.xlsx)
 
 Сохраняем данные в Excel после завершения работы паука
